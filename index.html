@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cultivo Hidropônico e Aquaponia: alternativas sustentáveis para o futuro da alimentação - Concurso Agrinho 2026">
+    <title>Agrinho 2026 | Hidroponia e Aquaponia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
+
+    <nav class="nav-principal" id="menu">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo" aria-label="Início">
+                <span class="logo-icone" aria-hidden="true">🌿</span>
+                <span class="logo-texto">Agrinho 2026</span>
+            </a>
+
+            <button class="nav-hamburguer" id="btnHamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+                <span class="hamburguer-linha"></span>
+                <span class="hamburguer-linha"></span>
+                <span class="hamburguer-linha"></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="#inicio" class="nav-link" role="menuitem">Início</a></li>
+                <li role="none"><a href="#contexto" class="nav-link" role="menuitem">O Desafio</a></li>
+                <li role="none"><a href="#hidroponia" class="nav-link" role="menuitem">Hidroponia</a></li>
+                <li role="none"><a href="#aquaponia" class="nav-link" role="menuitem">Aquaponia</a></li>
+                <li role="none"><a href="#calculadora" class="nav-link" role="menuitem">Calculadora</a></li>
+                <li role="none"><a href="#comecar" class="nav-link" role="menuitem">Como Começar</a></li>
+            </ul>
+
+            <div class="nav-controles">
+                <button class="btn-controle" id="btnFonteMenos" aria-label="Diminuir tamanho da fonte">A-</button>
+                <button class="btn-controle" id="btnFonteMais" aria-label="Aumentar tamanho da fonte">A+</button>
+                <button class="btn-controle btn-tema" id="btnTema" aria-label="Alternar modo escuro">
+                    <span class="tema-icone" aria-hidden="true">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="conteudo">
+        <section class="secao hero" id="inicio" aria-labelledby="tituloHero">
+            <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+            <div class="hero-conteudo">
+                <h1 id="tituloHero" class="hero-titulo">Cultivo Hidropônico e Aquaponia</h1>
+                <p class="hero-subtitulo">Alternativas sustentáveis para o futuro da alimentação</p>
+                <a href="#contexto" class="btn-principal">Conheça a Revolução</a>
+            </div>
+            <div class="hero-onda" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,69.3C960,85,1056,107,1152,101.3C1248,96,1344,64,1392,48L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section class="secao contexto" id="contexto" aria-labelledby="tituloContexto">
+            <div class="container">
+                <h2 id="tituloContexto" class="secao-titulo">O Desafio Global</h2>
+                <p class="secao-descricao">Em 2050, seremos 9,7 bilhões de pessoas. A agricultura convencional consome 70% da água doce do planeta e um terço das terras aráveis já está degradado. Precisamos de novas soluções.</p>
+                
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3 class="card-titulo">Crescimento Populacional</h3>
+                        <p class="card-numero" data-alvo="97">0</p>
+                        <p class="card-unidade">milhões de habitantes até 2050</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-titulo">Água Consumida</h3>
+                        <p class="card-numero" data-alvo="70">0</p>
+                        <p class="card-unidade">por cento da água doce pela agricultura</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-titulo">Terra Degradada</h3>
+                        <p class="card-numero" data-alvo="33">0</p>
+                        <p class="card-unidade">por cento das terras aráveis perdidas</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao hidroponia" id="hidroponia" aria-labelledby="tituloHidroponia">
+            <div class="container">
+                <h2 id="tituloHidroponia" class="secao-titulo">Hidroponia</h2>
+                <p class="secao-descricao">Tecnologia madura e de alta precisão. Plantas crescem em soluções minerais controladas, sem necessidade de solo.</p>
+
+                <div class="tabs-hidroponia">
+                    <div class="tabs-botoes" role="tablist" aria-label="Sistemas hidropônicos">
+                        <button class="tab-btn ativo" role="tab" aria-selected="true" aria-controls="painelNft" id="tabNft">NFT</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="painelDwc" id="tabDwc">DWC</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="painelAeroponia" id="tabAeroponia">Aeroponia</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="painelSubstrato" id="tabSubstrato">Substrato</button>
+                    </div>
+
+                    <div class="tabs-paineis">
+                        <div class="tab-painel ativo" id="painelNft" role="tabpanel" aria-labelledby="tabNft">
+                            <h3>NFT — Nutrient Film Technique</h3>
+                            <p>Um filme fino e contínuo de solução nutritiva passa pelas raízes das plantas em canais inclinados. Ideal para alface, rúcula e ervas aromáticas. Alta eficiência e baixo consumo de água.</p>
+                            <ul>
+                                <li>Oxigenação constante das raízes</li>
+                                <li>Colheita em 30 a 40 dias</li>
+                                <li>Redução de 90% no uso de água</li>
+                            </ul>
+                        </div>
+                        <div class="tab-painel" id="painelDwc" role="tabpanel" aria-labelledby="tabDwc" hidden>
+                            <h3>DWC — Deep Water Culture</h3>
+                            <p>As raízes ficam submersas diretamente na solução nutritiva, oxigenada por bombas de ar. Simples de montar e muito eficiente para folhosas.</p>
+                            <ul>
+                                <li>Fácil manutenção diária</li>
+                                <li>Baixo custo inicial</li>
+                                <li>Excelente para iniciantes</li>
+                            </ul>
+                        </div>
+                        <div class="tab-painel" id="painelAeroponia" role="tabpanel" aria-labelledby="tabAeroponia" hidden>
+                            <h3>Aeroponia</h3>
+                            <p>As raízes são suspensas no ar e recebem uma névoa nutritiva em intervalos programados. Maximiza a oxigenação e acelera o crescimento.</p>
+                            <ul>
+                                <li>Crescimento até 3x mais rápido</li>
+                                <li>Uso mínimo de água</li>
+                                <li>Ideal para tubérculos e clones</li>
+                            </ul>
+                        </div>
+                        <div class="tab-painel" id="painelSubstrato" role="tabpanel" aria-labelledby="tabSubstrato" hidden>
+                            <h3>Cultivo em Substrato</h3>
+                            <p>Utiliza materiais como fibra de coco ou lã de rocha para sustentar as raízes, enquanto a solução nutritiva é aplicada por gotejamento.</p>
+                            <ul>
+                                <li>Perfeito para tomate e pimentão</li>
+                                <li>Maior estabilidade para culturas de longo ciclo</li>
+                                <li>Excelente drenagem e aeração</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao aquaponia" id="aquaponia" aria-labelledby="tituloAquaponia">
+            <div class="decoracao-onda decoracao-onda-topo" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,69.3C960,85,1056,107,1152,101.3C1248,96,1344,64,1392,48L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <h2 id="tituloAquaponia" class="secao-titulo">Aquaponia</h2>
+                <p class="secao-descricao">A sinergia perfeita entre peixes e plantas em um ciclo fechado de recirculação de água. A natureza trabalhando a seu favor.</p>
+
+                <div class="simulador" id="simuladorAquaponia" aria-label="Simulador do ciclo aquapônico">
+                    <h3 class="simulador-titulo">Simule o Ciclo Aquapônico</h3>
+                    <p class="simulador-instrucao">Clique nas etapas para entender como tudo se conecta:</p>
+                    
+                    <div class="ciclo-container">
+                        <button class="ciclo-etapa" data-etapa="peixes" type="button">
+                            <span class="ciclo-icone" aria-hidden="true">🐟</span>
+                            <span class="ciclo-label">Peixes</span>
+                        </button>
+                        <span class="ciclo-seta" aria-hidden="true">→</span>
+                        <button class="ciclo-etapa" data-etapa="bacterias" type="button">
+                            <span class="ciclo-icone" aria-hidden="true">🦠</span>
+                            <span class="ciclo-label">Bactérias</span>
+                        </button>
+                        <span class="ciclo-seta" aria-hidden="true">→</span>
+                        <button class="ciclo-etapa" data-etapa="plantas" type="button">
+                            <span class="ciclo-icone" aria-hidden="true">🌱</span>
+                            <span class="ciclo-label">Plantas</span>
+                        </button>
+                        <span class="ciclo-seta" aria-hidden="true">→</span>
+                        <button class="ciclo-etapa" data-etapa="agua" type="button">
+                            <span class="ciclo-icone" aria-hidden="true">💧</span>
+                            <span class="ciclo-label">Água Limpa</span>
+                        </button>
+                    </div>
+
+                    <div class="ciclo-descricao" id="cicloDescricao">
+                        <p class="ciclo-texto-padrao">Selecione uma etapa acima para ver a explicação.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="decoracao-onda decoracao-onda-base" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,69.3C960,85,1056,107,1152,101.3C1248,96,1344,64,1392,48L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section class="secao comparativo" id="comparativo" aria-labelledby="tituloComparativo">
+            <div class="container">
+                <h2 id="tituloComparativo" class="secao-titulo">Hidroponia vs Aquaponia</h2>
+                
+                <div class="tabela-container" role="region" aria-label="Tabela comparativa" tabindex="0">
+                    <table class="tabela-comparativo">
+                        <thead>
+                            <tr>
+                                <th scope="col">Característica</th>
+                                <th scope="col">Hidroponia</th>
+                                <th scope="col">Aquaponia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Fonte de nutrientes</th>
+                                <td>Solução mineral sintética</td>
+                                <td>Resíduos orgânicos dos peixes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Produtos</th>
+                                <td>Apenas vegetais</td>
+                                <td>Vegetais + Peixes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Complexidade</th>
+                                <td>Moderada</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Custo inicial</th>
+                                <td>Médio</td>
+                                <td>Médio-Alto</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Economia de água</th>
+                                <td>Até 90%</td>
+                                <td>Até 95%</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sustentabilidade</th>
+                                <td>Alta</td>
+                                <td>Muito alta</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao calculadora" id="calculadora" aria-labelledby="tituloCalculadora">
+            <div class="container">
+                <h2 id="tituloCalculadora" class="secao-titulo">Calculadora de Economia</h2>
+                <p class="secao-descricao">Descubra quantos litros de água você pode economizar comparando agricultura tradicional com cultivos sem solo.</p>
+
+                <form class="form-calculadora" id="formCalculadora" novalidate>
+                    <div class="form-grupo">
+                        <label for="areaCultivo">Área de cultivo (em m²)</label>
+                        <input type="number" id="areaCultivo" name="areaCultivo" min="1" max="10000" placeholder="Ex: 50" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="tipoSistema">Tipo de sistema</label>
+                        <select id="tipoSistema" name="tipoSistema" required>
+                            <option value="" disabled selected>Escolha uma opção</option>
+                            <option value="hidroponia">Hidroponia (economia de 90%)</option>
+                            <option value="aquaponia">Aquaponia (economia de 95%)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-principal">Calcular Economia</button>
+                </form>
+
+                <div class="resultado-calculadora" id="resultadoCalculadora" aria-live="polite">
+                    <p class="resultado-padrao">Preencha os campos acima para ver o resultado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao comecar" id="comecar" aria-labelledby="tituloComecar">
+            <div class="container">
+                <h2 id="tituloComecar" class="secao-titulo">Como Começar</h2>
+                <p class="secao-descricao">Do iniciante ao avançado: três caminhos para começar seu cultivo sustentável hoje mesmo.</p>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-pos="left">
+                        <div class="timeline-conteudo">
+                            <h3>Iniciante</h3>
+                            <p><strong>Sistema:</strong> Hidroponia NFT pequena</p>
+                            <p><strong>Investimento:</strong> R$ 500 a R$ 1.000</p>
+                            <p><strong>Dedicação:</strong> 30 minutos por dia</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-pos="right">
+                        <div class="timeline-conteudo">
+                            <h3>Intermediário</h3>
+                            <p><strong>Sistema:</strong> Aquaponia com tilápias</p>
+                            <p><strong>Investimento:</strong> R$ 2.000 a R$ 5.000</p>
+                            <p><strong>Dedicação:</strong> 1 a 2 horas por dia</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-pos="left">
+                        <div class="timeline-conteudo">
+                            <h3>Avançado</h3>
+                            <p><strong>Sistema:</strong> Automatizado com sensores</p>
+                            <p><strong>Investimento:</strong> A partir de R$ 10.000</p>
+                            <p><strong>Dedicação:</strong> 2 a 4 horas por dia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape" id="contato">
+        <div class="container">
+            <p class="rodape-texto">Projeto desenvolvido para o <strong>Concurso Agrinho 2026</strong> — Programação Front-End.</p>
+            <p class="rodape-texto">Tema: Cultivo Hidropônico e Aquaponia</p>
+            <p class="rodape-creditos">Conteúdo e código 100% autoral</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
